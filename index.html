@@ -28,7 +28,7 @@
         </ul>
       </header>
       <section>
-        <p>iskCache is a beautiful lib to works with cache in android, simple, quick and good.</p>
+        <p>DiskCache is a beautiful lib to works with cache in android, simple, quick and good.</p>
 
 <p>See examples :</p>
 
@@ -41,10 +41,12 @@
 <h2>
 <a id="put" class="anchor" href="#put" aria-hidden="true"><span class="octicon octicon-link"></span></a>PUT</h2>
 
-<pre><code>//Can put String, Object, SerializableValue, Binary, JSONObject, Drawable,Bitmap
+<pre><code>//Can put String, Object, SerializableValue, Binary, 
+//JSONObject, Drawable,Bitmap
 diskCache.put("key","foo");
 
-//Put with time to expire , save for one day and expire after that returns null
+//Put with time to expire , save for one day , 
+//and after expire time returns null
 diskCache.put("key","foo", DiskCache.TIME_DAY*1);
 
 //hour time
@@ -62,6 +64,12 @@ diskCache.getAsJSONObject("key");
 diskCache.getAsDrawable("key");
 diskCache.getAsBitmap("key");
 diskCache.getAsBinary("key");
+</code></pre>
+
+<h2>
+<a id="remove" class="anchor" href="#remove" aria-hidden="true"><span class="octicon octicon-link"></span></a>REMOVE</h2>
+
+<pre><code>diskCache.remove("key","foo");
 </code></pre>
       </section>
       <footer>
