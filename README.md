@@ -8,7 +8,7 @@ DiskCache is a beautiful lib to works with cache in android, simple, quick and g
 
 See examples :
 
-## SIMPLE MODE ##
+## INSTANCE , is Easy ##
 
 ```
 DiskCache diskCache = DiskCache.get(getApplicationContext());
