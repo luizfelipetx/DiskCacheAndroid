@@ -71,6 +71,17 @@ diskCache.getAsBinary("key");
 
 <pre><code>diskCache.remove("key","foo");
 </code></pre>
+
+<h2>
+<a id="advanced" class="anchor" href="#advanced" aria-hidden="true"><span class="octicon octicon-link"></span></a>ADVANCED</h2>
+
+<pre><code>//put the size of cache - default is 50MB
+
+private static final int MAX_SIZE = 1000 * 1000 * 50;  // 50MB
+private static final int MAX_COUNT = Integer.MAX_VALUE; // max objects can be saved
+
+DiskCache diskCache = DiskCache.get(getApplicationContext(),MAX_SIZE,MAX_COUNT);
+</code></pre>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/luizfelipetx">luizfelipetx</a></p>
